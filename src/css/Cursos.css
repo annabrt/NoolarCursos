@@ -1,0 +1,864 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #E4CDC7; 
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+
+/* BANNER SECTION */
+ .banner {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+ 
+.imagembanner{
+  position: absolute; /* Para fixar no fundo */
+  z-index: -1; /* Um pouco acima do -3 para não conflitar */
+  top: -10vw;
+  left: 1;
+  width: 107%;
+  object-fit: cover; /* Garante o preenchimento sem distorção */
+}
+
+.text-section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: -20vw;
+}
+  
+  .text-section h1 {
+    font-size: 4.9vw;
+    position: relative;
+    left: -10.4vw;
+    top: -1.74vw;
+  
+  }
+  
+  .text-section p {
+    font-size: 3.3vw;
+    font-weight: 600;
+    position: relative;
+    top: -1.70vw;
+    text-align: left;
+  }
+  
+  .highlight {
+    color: #F3B95A;
+    font-weight: 700;
+  }
+  
+  .button1 {
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: 0.9s;
+    background-color: #F6794A;
+    color: white;
+    cursor: pointer;
+    border-radius: 3.96vw;
+    border: none;
+    padding: 1.74vw 3.47vw;
+    font-size: 2.4vw;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0.3, 0.3);
+    margin-left: -16.72vw;
+    margin-bottom: 2vw;
+  }
+  
+  .button1:hover {
+    transform: scale(1.1);
+    background-color: #732102;
+  }
+  
+  .icon-section {
+    position: relative;
+    z-index: 4;
+    margin-top: 2rem;
+    opacity: 1;
+    left: -0.69vw;
+    top: -20vw;
+  }
+
+   */
+  /*FIM BANNER SECTION*/
+
+
+
+
+
+
+
+
+
+
+
+  /*FRASE*/
+
+.circle {
+    position: relative;
+    width: 70vw; /* Ajusta o tamanho do contêiner */
+}
+
+.circle img {
+    width: 70vw; /* Diminui o tamanho da imagem */
+    position: absolute;
+    left: -15%; /* Move mais para a esquerda */
+    top: 95%; /* Mantém o ajuste vertical */
+    z-index: 1; /* Garante que a imagem fique visível acima de outros elementos */
+}
+
+
+
+
+  
+  
+  /*PRIMEIRA CAIXA DE TEXTO*/
+  .text-box {
+    position: absolute;
+    top: 135%; 
+    left: -5%;
+    background-color: #D9D9D9;
+    padding: 2vw 8vw; 
+    border-radius: 3.9vw;
+    box-shadow: 0vw 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
+
+    font-size: 3vw; 
+    max-width: 180%; 
+    width: fit-content; 
+    z-index: 2;
+  }
+  .text-box p { 
+    color: #006182;
+    font-size: 3vw;
+    font-weight: 600;
+    position: relative;
+    text-align: left; 
+   }
+  
+  .text-box .highlight2 {
+    color: #198168; 
+    font-weight: 700;
+  }
+  
+  /*SEGUNDA CAIXA DE TEXTO*/
+ .text-box2 {
+    position: absolute;
+    top: 195%; 
+    left: 29%;
+    background-color: #D9D9D9;
+    padding: 1vw 5vw;
+    border-radius: 3.9vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 3vw;
+    max-width: 70vw; 
+    width: 70vw; 
+    z-index: 2;
+    
+  }
+  
+  .text-box2 p { 
+    color: #006182;
+    font-size: 2.8vw;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+  }
+  
+  
+  .text-box2 .highlight3 {
+    color: #198168; 
+    font-weight: 700;
+  }
+  .text-box2 .highlight4 {
+    color: #F6794A; 
+    font-weight: 700;
+  }
+  
+  .icon2 {
+    position: absolute; 
+    z-index: 4;
+    margin-top: 86%; 
+    left: 35vw; 
+    top: -7.8vw; 
+    opacity: 1;
+  }
+  .icon2 img {
+    width: 25vw; 
+    height: auto; 
+  }
+  
+  
+  /*FIM FRASE*/
+
+
+
+
+
+
+
+
+
+
+
+
+  /*COURSE SECTION*/
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vw;
+    z-index: 3;
+    position: relative; /* Permite que o layout siga o fluxo natural */
+    padding: 2vw 1vw; /* Adiciona espaçamento interno */
+  }
+  
+  
+  .courses h2 {
+    font-size: 3.3vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    margin-top: 10vw;
+  }
+  
+  .veja-mais {
+    z-index: 100;
+    position: absolute;
+    top: 55vw;
+    display: inline-block; 
+    margin-top: 8vw; 
+    margin-bottom: 6vw; 
+    font-weight: 600;
+    transition: 0.3s ease; 
+    background-color: #F6794A;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 2.8vw; 
+    border-radius: 3.5vw; 
+    padding: 1.2vw 3vw;
+    box-shadow: 0.3vw 0.6vw 1vw rgba(0, 0, 0, 0.3); 
+    text-align: center;
+}
+
+/* Efeito de hover para destacar o botão */
+  .veja-mais:hover {
+    background-color: #e0683e; 
+    transform: translateY(-0.5vw); 
+    box-shadow: 0.4vw 0.8vw 1.2vw rgba(0, 0, 0, 0.4); 
+}
+
+    /*FIM COURSE SECTION*/
+
+
+
+
+
+
+
+
+
+
+
+
+    /*CARD SECTION*/
+
+    
+      
+      
+      .cards {
+        display: flex;
+        justify-content: center;
+        margin-top: 4vw;
+        margin-bottom: 0;
+        padding: 0;
+        
+      }
+      
+      .card {
+        height: 25.011vw; 
+        transition: height 0.3s ease; 
+        width: 26vw; 
+        padding: 2vw; 
+        border-radius: 0.69vw;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        height: 25.011vw; 
+      }
+      
+      .card img {
+        width: 22.92vw;
+        height: 13.89vw; 
+        object-fit: cover; 
+        border-radius: 0.35vw;
+      }
+      .card.card-2 img{
+        height: 13.89vw;
+        object-fit: cover;
+      }
+      
+      .card h3 {
+        text-align: center; 
+        color: #dbdbdb; 
+        margin: 6.0rem 0; 
+        font-size: 2rem; 
+        transition: opacity 0.3s ease; 
+      }
+      
+      /* Estilização individual dos cards */
+      .card.card-1 {
+        position: absolute;
+        right: 2vw;
+
+        background-color: #198168; 
+      }
+      
+      .card.card-2 {
+        position: absolute;
+
+        background-color: #F6794A; /* Cor para o card 2 */
+      }
+      
+      .card.card-3 {
+        position: absolute;
+        left: 2vw;
+        background-color: #006182; /* Cor para o card 3 */
+      }
+      
+      .card {
+        
+        position: relative; /* Para que os filhos possam ser posicionados em relação ao card */
+        overflow: hidden; /* Garante que nada saia da área do card */
+      }
+      .card.card-2 h3{
+        margin: 4.1vw 0 0.5vw 0; /* Margens consistentes */
+        height: 2.5vw; /* Altura fixa igual aos outros cards */ 
+      
+      }
+      
+      .card h3 {
+        text-align: center;
+        color: #dbdbdb;
+        font-size: 1.8vw; /* Ajusta o tamanho da fonte */
+        margin: 5vw 0 0.5vw 0; /* Margem superior e inferior para ajustar a posição */
+        line-height: 1.2; /* Controla o espaçamento entre linhas */
+        max-width: 90%; /* Mantém o título dentro do card */
+        transition: opacity 0.3s ease; /* Suaviza a transição de opacidade */
+      }
+      
+      
+      .card .hover-text {
+        display: none; /* Esconde o texto por padrão */
+        position: absolute;
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, 10%); /* Alinha o centro do texto ao centro do card */
+        opacity: 0; /* Invisível no início */
+        transition: opacity 0.3s ease; /* Suaviza a transição de visibilidade */
+        font-size: 1.5vw; /* Ajuste o tamanho conforme necessário */
+        color: #fff;
+        font-weight: 600;
+        text-align: center; /* Centraliza o texto */
+        width: 80%; /* Limita a largura para evitar quebra de linha */
+      }
+      
+      .card:hover {
+        
+        height: 30vw; /* Ajuste da altura ao passar o mouse */
+      }
+      
+      .card:hover h3 {
+        opacity: 0; /* Esconde o título principal ao passar o mouse */
+      }
+      
+      .card:hover .hover-text {
+        display: flex; /* Mostra o texto ao passar o mouse */
+        opacity: 1; /* Torna o texto visível */
+      }
+
+      
+#card2 .card-img{
+  
+  position: absolute;
+  
+}
+/*FIM CARD SECTION*/      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SOCIAL MEDIA SECTION*/
+
+  .imagemmeio{
+  position: absolute;
+  width: 105%;
+  overflow: hidden;
+  z-index: -9;
+  left: -2vw;
+  top: -86vw;
+  display: flex;
+
+  }
+  .social-content {
+    position: absolute; 
+    top: 200vw;/* Para que o conteúdo seja posicionado em relação ao contêiner pai */
+    display: flex; /* Permite que a imagem e o parágrafo fiquem lado a lado */
+    flex-direction: column; /* Coloca o título e parágrafo um em cima do outro */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 2vw; /* Espaço interno */
+    z-index: 2; /* Coloca o conteúdo acima do fundo */
+  }
+  .social-content h2 {
+    margin-left: 25vw;
+    text-align: center; /* Centraliza o texto */
+    font-size: 5vw; /* Aumenta o tamanho da fonte, ajuste conforme necessário */
+    color: #ffffff; /* Altera a cor do texto, ajuste conforme necessário */
+    margin-top: 4.0vw; 
+  }
+  .social-content p {
+    font-size: 2.4vw; /* Aumenta o tamanho da fonte do parágrafo, ajuste conforme necessário */
+    margin-top: -28vw;
+    margin-left: 2.08vw;
+    margin-bottom: 1.67vw;
+    color: #ffffff; /* Altera a cor do texto, ajuste conforme necessário */
+    text-align: left; /* Opcional: centraliza o texto, se desejar */
+    font-weight: 500;
+  }
+  
+  
+  .right-image {
+    width: 40vw;
+    margin-top: 7vw;
+    margin-left: 53vw;    /* Espaço entre a imagem e o parágrafo */
+
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 3.5vw; 
+    margin-top: 5.5vw; 
+    margin-left: 3vw
+  }
+  
+  .social-button {
+   box-shadow: 0.3vw 0.6vw 1vw rgba(0, 0, 0, 0.3);
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 1.24vw 3vw; 
+    background-color: #F6794A; 
+    color: #000; 
+    border: none; 
+    border-radius: 50vw; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  .social-button:hover {
+    background-color: #a44b27; 
+  }
+  .social-button i {
+    margin-right: 0.9vw; 
+    font-size: 1.5vw; 
+    margin-left: -0.9vw; 
+  }
+
+  /*FIM DA SOCIAL MEDIA SECTION*/
+
+
+
+/*RESPONSIVIDADE MOBILE FIRST*/
+
+/*Dispositivos móveis (abaixo de 768px) */
+
+@media (max-width: 768px) and (min-width: 300px){
+  .imagembanner{
+    height: 50vh;
+    object-fit: cover;
+    display: flex;
+    z-index: -1;
+    top: 1;
+    left: 1;
+  }
+
+  .icon-section{
+    display: flex;
+    position: relative;
+    margin-bottom: 205vw;
+    
+  }
+  .icon-section img {
+    display: flex;
+    width: 45vw;
+    left: 50vw;
+  }
+  .text-section{
+ 
+    top: -117vw;
+    left: -5vw;
+  }
+
+  .text-section h1 {
+    font-size: 6.9vw;
+    position: relative;
+    left: -9.3vw;
+    top: -1.74vw;
+  
+  }
+  
+  .text-section p {
+    font-size: 3.7vw;
+    font-weight: 600;
+    position: relative;
+    top: -1.70vw;
+    text-align: left;
+  }
+
+  .button1 {
+    margin-top: 0.5rem;
+    font-weight: 600;
+    transition: 0.9s;
+    background-color: #F6794A;
+    color: white;
+    cursor: pointer;
+    border-radius: 3.96vw;
+    border: none;
+    padding: 2.84vw 4.57vw;
+    font-size: 3.4vw;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0.3, 0.3);
+    margin-left: -14.72vw;
+    margin-bottom: 1vw;
+  }
+  
+  .button1:hover {
+    transform: scale(1.1);
+    background-color: #732102;
+  }
+
+  .circle {
+    position: relative;
+    display: flex;
+    top: -248vw;
+    left: -6vw;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 45%; 
+    left: -5%;
+    padding: 2vw 9vw; 
+    border-radius: 3.9vw;
+    box-shadow: 0vw 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
+    display: flex;
+    font-size: 3vw; 
+    max-width: 180%; 
+    width: fit-content; 
+    z-index: 2;
+  }
+
+  .text-box2 {
+    display: flex;
+    position: absolute;
+    top: 66%; 
+    left: 29%;
+    padding: 1vw 6vw;
+    border-radius: 3.9vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 3vw;
+    max-width: 70vw; 
+    width: 70vw; 
+    z-index: 2;
+    
+  }
+
+  .icon2 {
+    display: flex;
+    position: absolute; 
+    z-index: 4;
+    margin-top: 86%; 
+    left: 35vw; 
+    top: -3vw; 
+  }
+
+  .icon2 img{
+    width: 30vw;
+  }
+
+ 
+
+  .imagemmeio {
+    height: 115vh;
+    object-fit: cover;
+    display: flex;
+    width: 103%;
+    z-index: -1;
+    top: -70vw;
+    left: -2vw;
+  }
+
+  .courses {
+    flex-direction: column;
+    position: relative;
+    margin-top: -160vw;
+    display: flex;
+    z-index: 3;
+    padding: 4vw 2vw; /* Adiciona espaçamento interno */
+  }
+
+  
+  
+  .social-content h2 {
+    font-size: 1.6rem;
+    margin-top: 19vw; /* Ajuste o valor para mover o título para baixo */
+    margin-bottom: 1rem;
+    
+  }
+  
+  .social-content p {
+    font-size: 0.8rem;
+    margin-top: -28vw; /* Ajuste o valor para mover o texto para baixo */
+    margin-bottom: 2rem;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: -1.5vw; /* Ajuste o valor para mover os botões para baixo */
+  }
+  
+  .social-button {
+    background-color: #F6794A;
+    padding: 0.7rem;
+    font-size: 3vw;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-button i {
+    margin-right: 0.9vw; 
+    font-size: 3.4vw; 
+    margin-left: -0.2vw; 
+  }
+
+  
+  .social-button:hover {
+    background-color: #732102;
+  }
+ 
+  
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  /* Ajuste para a imagem do banner */
+  .imagembanner {
+    height: 40vh; /* Reduzindo a altura do banner para tablets */
+    object-fit: cover;
+    display: flex;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  /* Ajuste na seção de ícones */
+  .icon-section {
+    display: flex;
+    position: relative;
+    margin-bottom: 100px; /* Ajustando a margem inferior */
+  }
+  
+  .icon-section img {
+    width: 35vw; /* Ajustando o tamanho dos ícones */
+    left: 50%;
+    transform: translateX(-50%); /* Centralizando a imagem */
+  }
+
+  /* Ajustes na seção de texto */
+  .text-section {
+    top: -50vw; /* Ajustando o posicionamento */
+    left: -3vw;
+  }
+
+  .text-section h1 {
+    font-size: 4.5vw; /* Ajustando o tamanho da fonte */
+    position: relative;
+    left: -5vw;
+    top: 0;
+  }
+
+  .text-section p {
+    font-size: 2.5vw; /* Ajustando o tamanho da fonte */
+    font-weight: 600;
+    position: relative;
+    top: 0;
+    text-align: left;
+  }
+
+  /* Ajustes no botão */
+  .button1 {
+    margin-top: 1rem;
+    font-weight: 600;
+    background-color: #F6794A;
+    color: white;
+    cursor: pointer;
+    border-radius: 3vw;
+    border: none;
+    padding: 2vw 3vw;
+    font-size: 2.8vw;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.3);
+    margin-left: -10vw;
+  }
+
+  .button1:hover {
+    transform: scale(1.1);
+    background-color: #732102;
+  }
+
+  /* Ajustes na seção de círculos e texto */
+  .circle {
+    position: relative;
+    display: flex;
+    top: -180vw;
+    left: -5vw;
+  }
+
+  .text-box {
+    position: absolute;
+    top: 40%; 
+    left: -3%;
+    padding: 2vw 7vw;
+    border-radius: 3vw;
+    box-shadow: 0vw 0.28vw 0.56vw rgba(0, 0, 0, 0.2);
+    display: flex;
+    font-size: 2.5vw;
+    max-width: 180%;
+    width: fit-content;
+  }
+
+  .text-box2 {
+    display: flex;
+    position: absolute;
+    top: 60%; 
+    left: 30%;
+    padding: 1.5vw 5vw;
+    border-radius: 3vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 2.5vw;
+    max-width: 70vw;
+    width: 70vw;
+  }
+
+  .icon2 {
+    display: flex;
+    position: absolute;
+    z-index: 4;
+    margin-top: 70%;
+    left: 30vw;
+    top: -3vw;
+  }
+
+  .icon2 img {
+    width: 30vw;
+  }
+
+  /* Ajuste na imagem do meio */
+  .imagemmeio {
+    height: 90vh; /* Reduzindo altura para tablets */
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    z-index: -1;
+    top: -50vw;
+    left: 0;
+  }
+
+  /* Ajustes na seção de cursos */
+  .courses {
+    flex-direction: column;
+    position: relative;
+    margin-top: -100vw; /* Ajustando a margem */
+    display: flex;
+    z-index: 3;
+    padding: 4vw 2vw;
+  }
+
+  /* Ajustes na seção social */
+  .social-content h2 {
+    font-size: 1.8rem;
+    margin-top: 10vw; /* Ajuste no posicionamento */
+    margin-bottom: 1.5rem;
+  }
+
+  .social-content p {
+    font-size: 1rem;
+    margin-top: -10vw; /* Ajustando o espaço acima */
+    margin-bottom: 2rem;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: -2vw; /* Ajustando a margem dos botões */
+  }
+
+  .social-button {
+    background-color: #F6794A;
+    padding: 1rem;
+    font-size: 2.5vw;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .social-button i {
+    margin-right: 1vw;
+    font-size: 3vw;
+    margin-left: -0.2vw;
+  }
+
+  .social-button:hover {
+    background-color: #732102;
+  }
+}
